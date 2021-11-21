@@ -11,7 +11,7 @@ function onError(err, req, res) {
 
 const mount = fn => fn instanceof Polka ? fn.attach : fn;
 
-class Polka extends Router {
+export class Polka extends Router {
 	constructor(opts={}) {
 		super();
 		this.parse = parse;
